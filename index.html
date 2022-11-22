@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- https://cdnjs.com -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Wiki Search App</title>
+    <link rel="stylesheet" href="dist/css/main.css?cache_bust=123">
+    <script src="dist/js/all.js?cache_bust=123" defer></script>
+</head>
+<body>
+    <main>
+        <h1 class="offscreen">free search with wikipedia knowledge engine</h1>
+        <section class="search-entry">
+            <h2 class="offscreen">search wikipedia entry</h2>
+            <div class="logo" aria-hidden="true">
+                <span class="blue">W</span>
+                <span class="red">i</span>
+                <span class="yellow">k</span>
+                <span class="blue">S</span>
+                <span class="green">e</span>
+                <span class="red">a</span>
+                <span class="blue">r</span>
+                <span class="yellow">c</span>
+                <span class="red">h</span>
+            </div>
+            <form data-search-form class="search-form" role="search"> 
+                <label class="offscreen" for="search-input">Enter a search term or phrase</label>
+                <input data-search-input type="text" autocomplete="off" role="searchbox" />
+                <div data-clear-input class="none button clear-input" role="button" tabindex="0" aria-label="Clear search terms">
+                    <i class="fas fa-times"></i>
+                </div>
+                <button data-search-btn class="button search-btn" type="submit" aria-label="Submit button">
+                    <i class="fas fa-search blue"></i>
+                </button>
+            </form>
+        </section>
+        <section class="results">
+            <h2 class="offscreen">search results</h2>
+            <div class="search-stats-bar">
+                <div data-stats class="stats" aria-live="assertive"></div>
+            </div>
+            <div data-search-results class="search-results">
+                <!--  -->
+                <div class="result-item">
+                    <div class="result-title">
+                        <a href="https://en.wikipedia.org/wiki/Ligandrol" target="_blank">Ligandrol</a>
+                    </div>
+                    <div class="result-content">
+                        <div class="result-image">
+                            <img alt="LGD-4033.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/be/LGD-4033.svg/225px-LGD-4033.svg.png" decoding="async" width="150" height="100" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/be/LGD-4033.svg/338px-LGD-4033.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/be/LGD-4033.svg/450px-LGD-4033.svg.png 2x" data-file-width="512" data-file-height="363">
+                        </div>
+                        <div class="result-text">
+                            <p class="result-description">Ligandrol (VK5211, LGD-4033)[2] is a novel nonsteroidal oral selective androgen receptor modulator (SARM) for treatment of conditions such as muscle wasting and osteoporosis,[3] discovered by Ligand Pharmaceuticals and under development by Viking Therapeutics.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+            </div> 
+        </section>
+    </main>
+    <footer>
+        <p>Powered by <a href="https://www.wikipedia.org" target="_blank">Wikipedia </a></p>
+    </footer>
+</body>
+</html>
